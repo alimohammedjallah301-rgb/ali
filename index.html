@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ادرس واستفيد - منصة تعليمية لتحميل البحوث والكتب والمراجع للطلاب والباحثين">
+    <title>ادرس واستفيد | منصة تحميل البحوث والمراجع العلمية</title>
+    
+    <!-- Google Fonts: Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <i class="fa-solid fa-graduation-cap"></i> ادرس واستفيد
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#categories" class="nav-link">الأقسام</a></li>
+                    <li><a href="#featured" class="nav-link">أحدث الإضافات</a></li>
+                    <li><a href="#about" class="nav-link">عن المنصة</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="loginBtn"><i class="fa-regular fa-user"></i> تسجيل دخول</button>
+                <button class="btn btn-primary" id="uploadBtn"><i class="fa-solid fa-cloud-arrow-up"></i> رفع ملف</button>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">المنصة التعليمية الأولى</span>
+                <h1 class="hero-title">اكـتـشـف عـالـماً مـن <br><span class="text-gradient">المعرفة والأبحاث</span></h1>
+                <p class="hero-subtitle">حمّل آلاف الكتب، البحوث الجامعية، والمراجع العلمية في مختلف التخصصات لدعم مسيرتك الأكاديمية بكل سهولة وتفاعل.</p>
+                
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="ابحث عن كتاب، بحث، أو مرجع..." aria-label="Search resources">
+                    <div class="search-filter">
+                        <select id="searchType">
+                            <option value="all">الكل</option>
+                            <option value="book">كُتب</option>
+                            <option value="research">بحوث</option>
+                        </select>
+                    </div>
+                    <button class="btn-search" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i> ابحث الآن</button>
+                </div>
+                
+                <div class="popular-searches">
+                    <span>شائع:</span>
+                    <a href="#">الذكاء الاصطناعي</a>
+                    <a href="#">هندسة البرمجيات</a>
+                    <a href="#">الطب البشري</a>
+                    <a href="#">إدارة الأعمال</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Using a placeholder pattern or abstract visual if we don't have an image -->
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="mockup-body">
+                        <i class="fa-solid fa-book-open-reader mockup-icon"></i>
+                        <h3>مكتبة شاملة</h3>
+                        <div class="mockup-lines">
+                            <div class="line"></div>
+                            <div class="line w-70"></div>
+                            <div class="line w-50"></div>
+                        </div>
+                        <div class="files-preview">
+                            <div class="file-item"><i class="fa-solid fa-file-pdf"></i></div>
+                            <div class="file-item"><i class="fa-solid fa-file-word"></i></div>
+                            <div class="file-item"><i class="fa-solid fa-file-powerpoint"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-book"></i></div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="15000">0</h3>
+                    <p class="stat-text">+ كتاب ومرجع</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-microscope"></i></div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="8500">0</h3>
+                    <p class="stat-text">+ بحث علمي</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="24000">0</h3>
+                    <p class="stat-text">+ باحث وطالب</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                <div class="stat-info">
+                    <h3 class="stat-number" data-target="50000">0</h3>
+                    <p class="stat-text">+ عملية تحميل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>تصفح حسب <span class="text-gradient">التخصص</span></h2>
+                <p>اختر من بين العديد من التصنيفات للوصول إلى المراجع التي تناسب مجال دراستك</p>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be rendered by JS -->
+            </div>
+            
+            <div class="text-center mt-2">
+                <a href="#" class="btn btn-outline">عرض كل التخصصات <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured bg-light" id="featured">
+        <div class="container">
+            <div class="section-header flex-header">
+                <div>
+                    <h2>أحدث <span class="text-gradient">الإضافات</span></h2>
+                    <p>استكشف أحدث البحوث والكتب المضافة حديثاً للمنصة</p>
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">الكل</button>
+                    <button class="filter-tab" data-filter="book">كتب</button>
+                    <button class="filter-tab" data-filter="research">بحوث</button>
+                </div>
+            </div>
+            
+            <div class="resources-grid" id="resourcesGrid">
+                <!-- Resources will be rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>هل لديك بحث أو كتاب تود مشاركته؟</h2>
+                    <p>ساهم في إثراء المحتوى الأكاديمي العربي. ارفع أبحاثك ومقالاتك لتعم الفائدة ويصل علمك إلى آلاف الطلاب والباحثين.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-large">ابدأ برفع ملفاتك الآن</button>
+                        <button class="btn btn-glass btn-large">كيفية المشاركة</button>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <i class="fa-solid fa-cloud-arrow-up display-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="container footer-container">
+            <div class="footer-col about-col">
+                <a href="#" class="footer-logo">
+                    <i class="fa-solid fa-graduation-cap"></i> ادرس واستفيد
+                </a>
+                <p>منصة "ادرس واستفيد" هي مبادرة تعليمية تهدف إلى توفير وصول سهل ومجاني للمصادر العلمية والبحوث والكتب الأكاديمية للطلاب في مختلف أنحاء الوطن العربي لدعم مسيرة البحث العلمي.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">استعرض الكتب</a></li>
+                    <li><a href="#">البحوث الجامعية</a></li>
+                    <li><a href="#">أحدث الإضافات</a></li>
+                    <li><a href="#">التصنيفات</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>دعم ومساعدة</h3>
+                <ul>
+                    <li><a href="#">كيفية التحميل</a></li>
+                    <li><a href="#">شروط النشر</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col newsletter-col">
+                <h3>النشرة البريدية</h3>
+                <p>اشترك في نشرتنا البريدية لتصلك أحدث الكتب والبحوث المضافة حديثاً.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="البريد الإلكتروني..." required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 منصة ادرس واستفيد التعليمية. جميع الحقوق محفوظة.</p>
+                <p>صُنع بكل <i class="fa-solid fa-heart" style="color: var(--danger);"></i> لدعم المعرفة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
